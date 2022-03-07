@@ -16,14 +16,24 @@
 
       <form name="contact" method="POST" data-netlify="true">
         <p>
-          <label>Your Name: <input type="text" name="name" /></label>   
+          <label>Nama Kamu: <input type="text" id="Jeneng" name="Nama Kamu" placeholder="BukanBudi" /></label>
         </p>
         <p>
-          <label>Your Email: <input type="email" name="email" /></label>
+          <label>APK Request: <input type="text" id="Apeka" name="Req Apk" placeholder="Req Apk Inshot Mod" /></label>
         </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
+          
+          <script>
+            function maju(){
+            var jeneng = document.getElementById("Jeneng").value;
+            var apk = document.getElementById("Apeka").value;
+            location.replace("mailto:rianfadhil88@yahoo.com?subject=REQUEST%20APK%20MOD&amp;body=Saya%20"+jeneng+"ingin%20request%20apkmod%20"+apk+",%20Terimakasih");
+              }
+          </script>
+          
+          <div">
+              <button type="submit" onclick="maju()" class="form-control-submit-button">Submit</button>
+          </div>
+          
         <p>
           <button type="submit">Send</button>
         </p>
