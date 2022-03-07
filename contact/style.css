@@ -28,6 +28,15 @@ body {
     text-align: center;
 }
 
+form {
+    background-color: var(--secondary);
+
+    width: 100%;
+    max-width: 394px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
 input, 
 textarea {
     background-color: var(--background);
