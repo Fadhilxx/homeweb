@@ -29,7 +29,7 @@ body {
 }
 
 input, 
-textarea {
+label {
     background-color: var(--background);
     color: var(--primary);
 
@@ -46,7 +46,7 @@ textarea {
 }
 
 input:focus, 
-textarea:focus {
+label:focus {
     outline: none;
     border: solid 2px var(--primary);
 }
