@@ -1,0 +1,72 @@
+:root {
+    --primary: rgb(204, 204, 204);
+    --secondary: rgb(255, 255, 255);
+    --background: rgb(0, 0, 0);
+
+    --font: "Poppins";
+
+
+    font-family: var(--font);
+    font-size: 62.5%;
+    color: var(--primary);
+}
+
+body {
+    background-color: var(--background);
+
+    font-size: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+}
+
+.text {
+    text-align: center;
+}
+
+input, 
+textarea {
+    background-color: var(--background);
+    color: var(--primary);
+
+    font-family: var(--font);
+    font-size: 1.4rem;
+
+    height: 40px;
+    width: 100%;
+    padding: 15px;
+    border: 2px solid var(--secondary);
+    box-sizing: border-box;
+
+    transition: border 200ms ease-in-out;
+}
+
+input:focus, 
+textarea:focus {
+    outline: none;
+    border: solid 2px var(--primary);
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: var(--secondary);
+    color: var(--primary);
+
+    font-size: 1.7rem;
+
+    padding: 3px 15px;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
