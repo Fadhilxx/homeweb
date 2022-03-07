@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact to Me</title>
+    <link rel="stylesheet" href="req.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" id="Jeneng" name="name" placeholder="Xtrict" /></label>
+        </p>
+        <p>
+          <label>Email kamu: <input type="email" id="Email" name="email" placeholder="emailmu@yourdomain.com" /></label>
+        </p>
+        <p>
+          <label>Description: <input type="text" id="Apeka" name="reqapk" placeholder="Aplikasinya" /></label>
+        </p>
+          
+          <script>
+            function maju(){
+            var jeneng = document.getElementById("Jeneng").value;
+            var dsc = document.getElementById("Desc").value;
+            var emaile = document.getElementById("Email").value;
+            location.replace(`mailto:rianfadhil88@yahoo.com?subject=Mail%20From%20Your%20Website&body=Halo,%20saya%20${jeneng}%0D%0A${dsc}%0D%0A%0D%0AEmail%20saya%20:%20${emaile}%0D%0A%0D%0ATerimakasih.`);
+              }
+          </script>
+          
+          <div">
+              <button type="submit" onclick="maju()" href="Thanks.html">Submit</button>
+          </div>
+          
+        <!--<p>
+          <button type="submit">Send</button>
+        </p>-->
+    </form>
+
+</body>
+</html>
