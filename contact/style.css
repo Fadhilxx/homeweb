@@ -57,7 +57,7 @@ textarea {
 }
 
 button {
-    background-color: var(--secondary);
+    background-color: var(--background);
     color: var(--primary);
 
     font-size: 1.7rem;
